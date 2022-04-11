@@ -652,6 +652,7 @@ const Home = (props: HomeProps) => {
                     <DesContainer>
                         <Des elevation={2}>
                             <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>APE LIGA</GoldTitle></LogoAligner>
+                            <p>PRECIO 1 SOL - CANTIDAD MINIMA PARA HACER MINT 1.05 SOL.</p>
                             <p>Sólo 5000 NFT disponibles de Football Ape edición ApeLiga Española! Ya hay más de 2000 reservados! Obtén el tuyo antes que se agoten o en el mercado secundario!</p>
                             <p>DEBIDO A LA ALTA DEMANDA ES POSIBLE QUE DE ERROR AL HACER MINT EN TAL CASO NO SE COBRARÁ NADA Y SE DEBERÁ REPETIR EL PROCESO DE MINT</p>
                             <p>SISTEMA ANTIBOT y CAPTCHA ACTIVADO</p>
