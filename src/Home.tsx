@@ -551,26 +551,19 @@ const Home = (props: HomeProps) => {
                 <WalletContainer>
                     <Logo><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer"><img alt=""
                                                                                                           src="logo.png"/></a></Logo>
-                    <Menu>
-                        <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">Menu 1</a>
-                        </li>
-                        <li><a href="http://localhost:3000/" target="_blank"
-                               rel="noopener noreferrer">Menu 2</a></li>
-                        <li><a href="http://localhost:3000/" target="_blank"
-                               rel="noopener noreferrer">Menu 3</a></li>
-                    </Menu>
+
                     <Wallet>
                         {wallet ?
                             <WalletAmount>{(balance || 0).toLocaleString()} SOL<ConnectButton/></WalletAmount> :
                             <ConnectButton>Connect Wallet</ConnectButton>}
                     </Wallet>
                 </WalletContainer>
-                <ShimmerTitle>MINT IS LIVE !</ShimmerTitle>
+                <ShimmerTitle>MINT ACTIVO POR TIEMPO LIMITADO!</ShimmerTitle>
                 <br/>
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
-                            <h2>My NFT</h2>
+                            <h2>APELIGA</h2>
                             <br/>
                             <div><Price
                                 label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
@@ -607,7 +600,7 @@ const Home = (props: HomeProps) => {
                                         renderer={renderGoLiveDateCounter}
                                     />) : (
                                     !wallet ? (
-                                            <ConnectButton>Connect Wallet</ConnectButton>
+                                            <ConnectButton>Conectar Wallet</ConnectButton>
                                         ) : (!isWLOnly || whitelistTokenBalance > 0) ?
                                         candyMachine?.state.gatekeeper &&
                                         wallet.publicKey &&
@@ -653,36 +646,15 @@ const Home = (props: HomeProps) => {
                             </MintButtonContainer>
                             <br/>
                             {wallet && isActive && solanaExplorerLink &&
-                              <SolExplorerLink href={solanaExplorerLink} target="_blank">View on Solscan</SolExplorerLink>}
+                              <SolExplorerLink href={solanaExplorerLink} target="_blank">Ver en Solscan</SolExplorerLink>}
                         </NFT>
                     </DesContainer>
                     <DesContainer>
                         <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>TITLE 1</GoldTitle></LogoAligner>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                        </Des>
-                        <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>TITLE 2</GoldTitle></LogoAligner>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                        </Des>
-                        <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>TITLE 3</GoldTitle></LogoAligner>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
+                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>APE LIGA</GoldTitle></LogoAligner>
+                            <p>Sólo 5000 NFT disponibles de Football Ape edición LaLiga Española! Ya hay más de 2000 reservados! Obtén el tuyo antes que se agoten o en el mercado secundario!</p>
+                            <p>Estaremos en los mercados más importantes para poder comprar tu APE o para poder venderlo y conseguir uno del equipo que quieras! Para garantizar que el precio no baje, vamos a reservar una parte del capital para mantener el precio de todo lo que baje de 1 SOL. Accede ya a nuestro mercado secundario donde podrás venderlo o comprarlos con otros usuarios.</p>
+                            <p>Obtén la primera edición limitada de Football ape y pon a prueba tu pasión por el fútbol. Conecta e intercambia con otros aficionados en nuestro mercado secundario. Hay más de 230 clubes participando! A que esperas?.</p>
                         </Des>
                     </DesContainer>
                 </MintContainer>
