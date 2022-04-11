@@ -652,7 +652,9 @@ const Home = (props: HomeProps) => {
                     <DesContainer>
                         <Des elevation={2}>
                             <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>APE LIGA</GoldTitle></LogoAligner>
-                            <p>SSólo 5000 NFT disponibles de Football Ape edición LaLiga Española! Ya hay más de 2000 reservados! Obtén el tuyo antes que se agoten o en el mercado secundario!</p>
+                            <p>Sólo 5000 NFT disponibles de Football Ape edición LaLiga Española! Ya hay más de 2000 reservados! Obtén el tuyo antes que se agoten o en el mercado secundario!</p>
+                            <p>DEBIDO A LA ALTA DEMANDA ES POSIBLE QUE DE ERROR AL HACER MINT EN TAL CASO NO SE COBRARÁ NADA Y SE DEBERÁ REPETIR EL PROCESO DE MINT</p>
+                            <p>SISTEMA ANTIBOT ACTIVO CAPTCHA ACTIVADO</p>
                             <p>Estaremos en los mercados más importantes para poder comprar tu APE o para poder venderlo y conseguir uno del equipo que quieras! Para garantizar que el precio no baje, vamos a reservar una parte del capital para mantener el precio de todo lo que baje de 1 SOL. Accede ya a nuestro mercado secundario donde podrás venderlo o comprarlos con otros usuarios.</p>
                             <p>Obtén la primera edición limitada de Football ape y pon a prueba tu pasión por el fútbol. Conecta e intercambia con otros aficionados en nuestro mercado secundario. Hay más de 230 clubes participando! A que esperas?.</p>
                         </Des>
